@@ -1,9 +1,8 @@
 [
     {
         "data":{
-            "name":"WATERGUN",
             "front":{
-                "image":"https://imgur.com/ATn3FID",
+                "image":"https://i.imgur.com/ATn3FID.png",
                 "header":"WATERGUN",
                 "text":"Adding Watergun to Minecraft Vanilla with this Datapack"
             },
