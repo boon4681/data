@@ -1,6 +1,7 @@
 [
     {
-        "WATERGUN":{
+        "data":{
+            "name":"WATERGUN"
             "front":{
                 "image":"https://imgur.com/ATn3FID",
                 "header":"WATERGUN",
