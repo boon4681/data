@@ -1,0 +1,16 @@
+{
+    "WATERGUN":{
+        "front":{
+            "image":"https://imgur.com/ATn3FID",
+            "header":"WATERGUN",
+            "text":"Adding Watergun to Minecraft Vanilla with this Datapack"
+        },
+        "back":{
+            "header":"DOWNLOAD",
+            "link":{
+                "text":"GitHub",
+                "href":"https://github.com/boon4681/MINECRAFT-Datapack-Watergun-1.15.X/releases"
+            }
+        }
+    }
+}
