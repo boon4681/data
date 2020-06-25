@@ -1,10 +1,10 @@
-### itemNameDisplay
+### itemNameDisplay/pack.mcmeta
 {"pack":{"pack_format":5,"description":"MADE BY ฺboon4681"}}
 ##STOP##
-### itemNameDisplay/data/item.name.display.by.boon4681/functions
+### itemNameDisplay/data/item.name.display.by.boon4681/functions/main.mcfunction
 execute as @e[type=item] as @s unless data entity @s CustomName run function item.name.display.by.boon4681:run
 ##STOP##
-### itemNameDisplay/data/item.name.display.by.boon4681/functions
+### itemNameDisplay/data/item.name.display.by.boon4681/functions/run.mcfunction
 forceload remove 29999977 9832
 forceload add 29999977 9832
 fill 29999976 0 9831 29999981 2 9833 bedrock
@@ -16,13 +16,13 @@ execute as @s run data modify entity @s CustomName set from block 29999977 1 983
 execute as @s run data modify entity @s CustomNameVisible set value 1b 
 execute as @s run setblock 29999977 1 9832 air
 ##STOP##
-### itemNameDisplay/data/minecraft/tags/functions
+### itemNameDisplay/data/minecraft/tags/functions/load.json
 {
     "values":[
     ]
 }
 ##STOP##
-### itemNameDisplay/data/minecraft/tags/functions
+### itemNameDisplay/data/minecraft/tags/functions/tick.json
 {
   "values": [
     "item.name.display.by.boon4681:main"
