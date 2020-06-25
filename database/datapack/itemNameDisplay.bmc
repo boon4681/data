@@ -1,0 +1,31 @@
+### itemNameDisplay
+{"pack":{"pack_format":5,"description":"MADE BY ฺboon4681"}}
+##STOP##
+### itemNameDisplay/data/item.name.display.by.boon4681/functions
+execute as @e[type=item] as @s unless data entity @s CustomName run function item.name.display.by.boon4681:run
+##STOP##
+### itemNameDisplay/data/item.name.display.by.boon4681/functions
+forceload remove 29999977 9832
+forceload add 29999977 9832
+fill 29999976 0 9831 29999981 2 9833 bedrock
+execute as @s run setblock 29999977 1 9832 oak_sign
+tag @s add customnameitemdisplaymadebyguyboon4681
+execute as @s run data merge block 29999977 1 9832 {Text1:'[{"selector":"@e[tag=customnameitemdisplaymadebyguyboon4681,limit=1]"}]'}
+tag @s remove customnameitemdisplaymadebyguyboon4681
+execute as @s run data modify entity @s CustomName set from block 29999977 1 9832 Text1
+execute as @s run data modify entity @s CustomNameVisible set value 1b 
+execute as @s run setblock 29999977 1 9832 air
+##STOP##
+### itemNameDisplay/data/minecraft/tags/functions
+{
+    "values":[
+    ]
+}
+##STOP##
+### itemNameDisplay/data/minecraft/tags/functions
+{
+  "values": [
+    "item.name.display.by.boon4681:main"
+  ]
+} 
+##STOP##
