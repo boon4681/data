@@ -1,0 +1,35 @@
+
+### LightningAxe/pack.mcmeta
+{"pack":{"pack_format":5,"description":""}}
+##STOP##
+### LightningAxe/data/boon4681.lightning.axe/functions/give.mcfunction
+give @s carrot_on_a_stick{boon4681.item.id:1012157}
+##STOP##
+### LightningAxe/data/boon4681.lightning.axe/functions/init.mcfunction
+scoreboard objectives add click minecraft.used:carrot_on_a_stick
+scoreboard objectives add holding dummy
+##STOP##
+### LightningAxe/data/boon4681.lightning.axe/functions/loop.mcfunction
+execute as @a store result score @s holding run data get entity @s SelectedItem.tag."boon4681.item.id"
+execute as @a if score @s holding matches 1012157 if score @s click matches 1.. at @s run function boon4681.lightning.axe:run
+scoreboard players set @s click 0
+##STOP##
+### LightningAxe/data/boon4681.lightning.axe/functions/run.mcfunction
+scoreboard players set @s click 0
+execute positioned ^ ^ ^0.25 unless block ~ ~ ~ air run summon lightning_bolt
+execute positioned ^ ^ ^0.25 if block ~ ~ ~ air run function boon4681.lightning.axe:run
+##STOP##
+### LightningAxe/data/minecraft/tags/functions/load.json
+{
+    "values":[
+      "boon4681.lightning.axe:init"
+    ]
+}
+##STOP##
+### LightningAxe/data/minecraft/tags/functions/tick.json
+{
+    "values":[
+        "boon4681.lightning.axe:loop"
+    ]
+}
+##STOP##
